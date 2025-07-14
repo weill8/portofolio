@@ -95,7 +95,7 @@
     <!-- Section Home -->
     <section
       id="home"
-      class="relative bg-[url('modern-2.jpg')] dark:text-white text-white bg-cover bg-center h-screen flex items-center justify-center"
+      class="relative bg-[url('porto_bg.jpg')] dark:text-white text-white bg-cover bg-center h-screen flex items-center justify-center"
     >
       <div class="absolute inset-0 bg-black/60 dark z-0"></div>
       <main class="relative z-10">
@@ -407,19 +407,8 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-    </script>
 
-    <!-- AOS Scroll Animation JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    </script>
-
-    <script>
-      const html = document.documentElement;
+        const html = document.documentElement;
       const toggleBtn = document.getElementById("toggleDark");
       const moonIcon = document.getElementById("moonIcon");
       const sunIcon = document.getElementById("sunIcon");
@@ -472,5 +461,16 @@
     });
   });
     </script>
+
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        once: true,
+        offset: 100,
+      });
+    </script>
+
   </body>
 </html>
