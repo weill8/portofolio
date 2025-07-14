@@ -145,6 +145,25 @@
         </div>
 
       </main>
+      
+      <div class="absolute bottom-0 w-full overflow-hidden leading-[0] z-20">
+        
+        <svg class="relative block w-full sm:h-[80px] h-[80px]"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120">
+          <path
+            d="M0,0 
+              C 150,100 350,0 600,50 
+              C 850,100 1050,0 1200,50 
+              V120 H0 Z"
+            fill="#262626"
+            class="dark:fill-[#F6F6F6]"
+          ></path>
+        </svg>
+      </div>
+
+
     </section>
 
 
@@ -214,7 +233,7 @@
           <img
             src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg"
             alt="MySQL"
-            class="h-16 mx-auto mb-2 brightness-200"
+            class="h-16 mx-auto mb-2 filter brightness-200 invert dark:invert-0 dark:brightness-0 transition-all duration-300"
           />
           <p class="text-sm text-gray-300 dark:text-black">MySQL</p>
         </div>
@@ -466,7 +485,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1000,
+        duration: 100,
         once: true,
       });
     </script>
