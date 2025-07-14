@@ -39,6 +39,10 @@
         font-family: "poppins", sans-serif;
       }
 
+      html, body {
+        overflow-x: hidden;
+      }
+
       body::-webkit-scrollbar {
         display: none;
       }
@@ -97,7 +101,7 @@
       <main class="relative z-10">
         <div class="text-center bottom-2 relative">
           <h4 class="text-[1.8rem] font-[300]">Hello & Welcome ,</h4>
-          <h1 class="text-[3rem] mb-4 sm:text-[4rem] font-[300]">
+          <h1 class="text-[2.5rem] mb-4 sm:text-[4rem] font-[300]">
             I Am
             <span
               class="typing font-[700] pr-[5px] border-r-[3px] border-r-white"
@@ -257,7 +261,6 @@
           <div>
             <label class="block mb-1 text-sm">Nama</label>
             <input
-              
               name="nama"
               type="text"
               placeholder="Nama Anda"
@@ -267,7 +270,6 @@
           <div>
             <label class="block mb-1 text-sm">Email</label>
             <input
-              
               type="email"
               name="email"
               placeholder="email@contoh.com"
@@ -277,7 +279,6 @@
           <div>
             <label class="block mb-1 text-sm">Nomor HP</label>
             <input
-              
               type="tel"
               name="nomorhp"
               placeholder="08xxxxxxxxx"
@@ -289,7 +290,6 @@
           <div>
             <label class="block mb-1 text-sm">Pesan</label>
             <textarea
-              
               rows="4"
               name="pesan"
               placeholder="Tulis pesanmu di sini..."
@@ -398,7 +398,7 @@
 
       type();
 
-        const scrollBtn = document.getElementById("scrollBtn");
+    const scrollBtn = document.getElementById("scrollBtn");
 
   window.addEventListener("scroll", () => {
     scrollBtn.classList.toggle("hidden", window.scrollY < 300);
