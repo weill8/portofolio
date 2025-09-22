@@ -386,36 +386,36 @@
 </footer>
 
 
-    <script>
-      // const words = ["Weillsun", "Student", "The Owner"];
-      // let i = 0,
-      //   j = 0,
-      //   currentWord = "",
-      //   isDeleting = false;
-      // const typingSpan = document.querySelector(".typing");
+<!--     <script>
+      const words = ["Weillsun", "Student", "The Owner"];
+      let i = 0,
+        j = 0,
+        currentWord = "",
+        isDeleting = false;
+      const typingSpan = document.querySelector(".typing");
 
-      // function type() {
-      //   currentWord = words[i];
-      //   if (!isDeleting) {
-      //     typingSpan.textContent = currentWord.substring(0, j + 1);
-      //     j++;
-      //     if (j === currentWord.length) {
-      //       isDeleting = true;
-      //       setTimeout(type, 1200);
-      //       return;
-      //     }
-      //   } else {
-      //     typingSpan.textContent = currentWord.substring(0, j - 1);
-      //     j--;
-      //     if (j === 0) {
-      //       isDeleting = false;
-      //       i = (i + 1) % words.length;
-      //     }
-      //   }
-      //   setTimeout(type, isDeleting ? 60 : 120);
-      // }
+      function type() {
+        currentWord = words[i];
+        if (!isDeleting) {
+          typingSpan.textContent = currentWord.substring(0, j + 1);
+          j++;
+          if (j === currentWord.length) {
+            isDeleting = true;
+            setTimeout(type, 1200);
+            return;
+          }
+        } else {
+          typingSpan.textContent = currentWord.substring(0, j - 1);
+          j--;
+          if (j === 0) {
+            isDeleting = false;
+            i = (i + 1) % words.length;
+          }
+        }
+        setTimeout(type, isDeleting ? 60 : 120);
+      }
 
-      // type();
+      type();
 
     const scrollBtn = document.getElementById("scrollBtn");
 
@@ -481,16 +481,17 @@
   });
     </script>
 
-    <!-- AOS Scroll Animation JS -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 100,
         once: true,
       });
-    </script>
+    </script> -->
 
   </body>
 </html>
+
 
 
