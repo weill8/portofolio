@@ -386,7 +386,7 @@
 </footer>
 
 
-<!--     <script>
+    <script>
       const words = ["Weillsun", "Student", "The Owner"];
       let i = 0,
         j = 0,
@@ -479,8 +479,503 @@
       }
     });
   });
-    </script> -->
+    </script>
 
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 100,
+        once: true,
+      });
+    </script>
+
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <link rel="icon" href="W_logo.png">
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Scroll Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+
+      html, body {
+        overflow-x: hidden;
+      }
+
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      .bxl-instagram:hover {
+        color: white;
+        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+      }
+    </style>
+  </head>
+  <body class="bg-[#1F1F1F] dark:bg-[#F6F6F6] text-white dark:text-black transition-colors duration-500">
+  <nav class="flex justify-between items-center w-full px-6 md:px-20 py-4 fixed z-50 backdrop-blur-md border-b border-white/10 dark:border-black/10 dark:text-[#FFB823]">
+      <a href="#" class="font-[600] text-[1.6rem]">Portofolio</a>
+            <div class="flex items-center gap-6">
+        <div class="hidden md:flex gap-6">
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:dark:bg-[#FFB823] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:dark:bg-[#FFB823] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#about"
+          >About</a
+        >
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:dark:bg-[#FFB823] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#skills"
+          >Skills</a
+        >
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:dark:bg-[#FFB823] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#contact"
+          >Contact</a
+        >
+      </div>
+
+        <button id="toggleDark" class="text-2xl">
+          <i class='bx bxs-sun hidden text-yellow-400' id="sunIcon"></i>
+          <i class='bx bxs-moon' id="moonIcon"></i>
+        </button>
+      </div>
+    </nav>
+
+<button onclick="scrollToTop()" id="scrollBtn" class="hidden fixed dark:bg-black dark:hover:bg-gray-800 bottom-6 right-6 z-50 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition">
+  <i class='bx bx-up-arrow-alt text-2xl text-black dark:text-white'></i>
+</button>
+
+
+    <!-- Section Home -->
+    <section
+      id="home"
+      class="relative bg-[url('porto_bg.jpg')] dark:text-white text-white bg-cover bg-center h-screen flex items-center justify-center"
+    >
+      <div class="absolute inset-0 bg-black/60 dark z-0"></div>
+      <main class="relative z-10">
+        <div class="text-center bottom-2 relative">
+          <h4 class="text-[1.8rem] font-[300]">Hello & Welcome ,</h4>
+          <h1 class="text-[2.5rem] mb-4 sm:text-[4rem] font-[300]">
+            I Am
+            <span
+              class="typing font-[700] pr-[5px] border-r-[3px] border-r-white"
+            ></span>
+          </h1>
+          <div
+            class="flex justify-center items-center gap-4 mb-6 text-[1.5rem]"
+          >
+            <a
+              href="https://wa.me/62895323563700?text=Halo!%20Saya%20ingin%20bertanya%20tentang%20portofolio%20Anda."
+            >
+              <i
+                class="bx bxl-whatsapp rounded-full p-[5px] transition-colors duration-300 hover:bg-[#25D366]"
+              ></i>
+            </a>
+            <a href="https://instagram.com/vv.spicyy"
+              ><i
+                class="bx bxl-instagram rounded-full p-[5px] transition-colors duration-300"
+              ></i
+            ></a>
+            <a href="https://www.tiktok.com/@not._spicyy?_t=8pav34ENZlx&_r=1"
+              ><i
+                class="bx bxl-tiktok rounded-full p-[5px] transition-colors duration-300 hover:bg-black"
+              ></i
+            ></a>
+            <a href="https://t.me/Weillsun"
+              ><i
+                class="bx bxl-telegram rounded-full p-[5px] transition-colors duration-300 hover:bg-[#4490f3]"
+              ></i
+            ></a>
+            <a href="https://github.com/weill8"
+              ><i
+                class="bx bxl-github rounded-full p-[5px] transition-colors duration-300 hover:bg-black"
+              ></i
+            ></a>
+          </div>
+
+          <div class="inline-block relative top-[2rem] py-[0.6rem] px-[1.8rem] bg-transparent border-2 border-white rounded-full
+                      hover:bg-white hover:text-black transition-colors duration-300">
+          <a href="#contact" class="">Contact Me!</a>
+        </div>
+
+      </main>
+      
+      <div class="absolute bottom-0 w-full overflow-hidden leading-[0] z-20">
+        
+        <svg class="relative block w-full sm:h-[80px] h-[150px]"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120">
+          <path
+            d="M0,0 
+              C 150,100 350,0 600,50 
+              C 850,100 1050,0 1200,50 
+              V120 H0 Z"
+            fill="#262626"
+            class="dark:fill-[#F6F6F6]"
+          ></path>
+        </svg>
+      </div>
+
+
+    </section>
+
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="min-h-screen flex items-center justify-center px-6 md:px-16 py-24 bg-[#262626] text-white dark:text-black dark:bg-[#F6F6F6]"
+    >
+      <div
+        class="grid md:grid-cols-2 gap-12 items-center max-w-6xl"
+        data-aos="fade-up"
+      >
+        <img
+          src="ME.jpg"
+          alt="Foto Saya"
+          class="rounded-3xl shadow-2xl w-full h-[33rem] object-cover border-4 border-[#3a3a3a]"
+        />
+        <div>
+          <h2 class="text-4xl font-bold mb-4">Tentang Saya</h2>
+          <p class="text-lg leading-relaxed text-gray-300 dark:text-black">
+            Saya adalah seorang
+            <span class="text-white dark:text-black font-semibold">pelajar</span> yang sedang
+            mendalami ilmu
+            <span class="text-white font-semibold dark:text-black">pemrograman</span>. Saya
+            gemar membangun website dan aplikasi sederhana menggunakan HTML,
+            CSS, PHP, Laravel, dan teknologi lainnya.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 md:px-16 bg-[#1F1F1F] text-white dark:text-black dark:bg-[#F1EFEC]">
+      <div class="text-center mb-16" data-aos="fade-down">
+        <h2 class="text-4xl font-bold">Skills</h2>
+        <p class="text-gray-400 mt-3">Teknologi yang saya pelajari :</p>
+      </div>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-12 gap-x-8 justify-items-center max-w-6xl mx-auto"
+      >
+        <div class="text-center" data-aos="zoom-in">
+          <i class="bx bxl-html5 text-6xl text-orange-500"></i>
+          <p class="mt-2 text-sm text-gray-300 dark:text-black">HTML5</p>
+        </div>
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+          <i class="bx bxl-css3 text-6xl text-blue-500"></i>
+          <p class="mt-2 text-sm text-gray-300 dark:text-black">CSS3</p>
+        </div>
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bx bxl-javascript text-6xl text-yellow-300"></i>
+          <p class="mt-2 text-sm text-gray-300 dark:text-black">JavaScript</p>
+        </div>
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+          <i class="bx bxl-php text-6xl text-indigo-400"></i>
+          <p class="mt-2 text-sm text-gray-300 dark:text-black">PHP</p>
+        </div>
+        <div class="text-center" data-aos="zoom-in">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg"
+            alt="Laravel"
+            class="h-16 mx-auto mb-2"
+          />
+          <p class="text-sm text-gray-300 dark:text-black">Laravel</p>
+        </div>
+
+        <div class="text-center" data-aos="zoom-in">
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg"
+            alt="MySQL"
+            class="h-16 mx-auto mb-2 filter brightness-200 invert dark:invert-0 dark:brightness-0 transition-all duration-300"
+          />
+          <p class="text-sm text-gray-300 dark:text-black">MySQL</p>
+        </div>
+
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
+          <i class="bx bxl-git text-6xl text-orange-400"></i>
+          <p class="mt-2 text-sm text-gray-300 dark:text-black">Git</p>
+        </div>
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="700">
+          <i class="bx bxl-tailwind-css text-6xl text-sky-400"></i>
+          <p class="text-sm text-gray-300 dark:text-black">Tailwind CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 md:px-16 bg-[#262626] text-white dark:text-black dark:bg-[#F6F6F6]">
+      <div class="text-center mb-16" data-aos="fade-down">
+        <h2 class="text-4xl font-bold">Hubungi Saya</h2>
+        <p class="text-gray-400 mt-3">
+          Silakan isi form atau temui saya di lokasi berikut:
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Google Maps -->
+        <div class="rounded-xl overflow-hidden shadow-lg" data-aos="fade-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31912.531027286874!2d104.04528621083988!3d1.112397599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d989632034d46b%3A0x7faa4bae5b2914e5!2sPerumahan%20bukit%20palem%20permai!5e0!3m2!1sid!2sid!4v1752417026211!5m2!1sid!2sid"
+            class="w-full h-full"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Form -->
+        <form
+          action="https://formspree.io/f/xanbwpkp"
+          method="POST"
+          class="bg-[#1F1F1F] dark:bg-[#FFFFFF] rounded-2xl p-8 shadow-lg dark:shadow-xl space-y-5"
+          data-aos="fade-left"
+        >
+          <div>
+            <label class="block mb-1 text-sm">Nama</label>
+            <input
+              name="nama"
+              type="text"
+              placeholder="Nama Anda"
+              class="w-full p-3 bg-[#2A2A2A] dark:bg-[#E5E0D8] rounded-lg border dark:border-stone-300 border-gray-600 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 text-sm">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@contoh.com"
+              class="w-full p-3 bg-[#2A2A2A] dark:bg-[#E5E0D8] rounded-lg border dark:border-stone-300 border-gray-600 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 text-sm">Nomor HP</label>
+            <input
+              type="tel"
+              name="nomorhp"
+              placeholder="08xxxxxxxxx"
+              minlength="12"
+              maxlength="13"
+              class="w-full p-3 bg-[#2A2A2A] dark:bg-[#E5E0D8] rounded-lg border dark:border-stone-300 border-gray-600 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 text-sm">Pesan</label>
+            <textarea
+              rows="4"
+              name="pesan"
+              placeholder="Tulis pesanmu di sini..."
+              class="w-full p-3 bg-[#2A2A2A] dark:bg-[#E5E0D8] rounded-lg border dark:border-stone-300 border-gray-600 focus:outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-white dark:bg-[#393E46] dark:hover:bg-[#686D76] text-black dark:text-white py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-300"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-[#1F1F1F] text-white dark:text-black dark:bg-white py-10 border-t border-gray-700 dark:border-gray-200 ">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+    
+    <!-- Nama / Brand -->
+    <div class="text-center md:text-left">
+      <h3 class="text-xl font-bold">Weillsun</h3>
+      <p class="text-gray-400 text-sm">© 2025 All rights reserved.</p>
+    </div>
+
+    <!-- Menu Navigasi -->
+    <div class="flex flex-wrap justify-center gap-6 text-sm">
+       <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white dark:after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white dark:after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+          href="#about"
+          >About</a
+        >
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white dark:after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+          href="#skills"
+          >Skills</a
+        >
+        <a
+          class="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white dark:after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+          href="#contact"
+          >Contact</a
+        >
+    </div>
+
+    <!-- Social Media -->
+    <div class="flex gap-2 text-2xl">
+            <a
+              href="https://wa.me/62895323563700?text=Halo!%20Saya%20ingin%20bertanya%20tentang%20portofolio%20Anda.">
+              <i class="bx bxl-whatsapp rounded-full p-[3px] transition-colors duration-300 dark:hover:text-white hover:bg-[#25D366]"></i>
+            </a>
+            
+            <a href="https://instagram.com/vv.spicyy">
+              <i class="bx bxl-instagram rounded-full p-[3px] transition-colors duration-300 dark:hover:text-white"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@not._spicyy?_t=8pav34ENZlx&_r=1">
+              <i class="bx bxl-tiktok rounded-full p-[3px] transition-colors duration-300 dark:hover:text-white hover:bg-black"></i>
+            </a>
+
+            <a href="https://t.me/Weillsun">
+              <i class="bx bxl-telegram rounded-full p-[3px] transition-colors duration-300 dark:hover:text-white hover:bg-[#4490f3]"></i>
+            </a>
+
+            <a href="https://github.com/weill8">
+              <i class="bx bxl-github rounded-full p-[3px] transition-colors duration-300 dark:hover:text-white hover:bg-black"></i>
+            </a>
+    </div>
+
+  </div>
+</footer>
+
+
+    <script>
+      const words = ["Weillsun", "Student", "The Owner"];
+      let i = 0,
+        j = 0,
+        currentWord = "",
+        isDeleting = false;
+      const typingSpan = document.querySelector(".typing");
+
+      function type() {
+        currentWord = words[i];
+        if (!isDeleting) {
+          typingSpan.textContent = currentWord.substring(0, j + 1);
+          j++;
+          if (j === currentWord.length) {
+            isDeleting = true;
+            setTimeout(type, 1200);
+            return;
+          }
+        } else {
+          typingSpan.textContent = currentWord.substring(0, j - 1);
+          j--;
+          if (j === 0) {
+            isDeleting = false;
+            i = (i + 1) % words.length;
+          }
+        }
+        setTimeout(type, isDeleting ? 60 : 120);
+      }
+
+      type();
+
+    const scrollBtn = document.getElementById("scrollBtn");
+
+  window.addEventListener("scroll", () => {
+    scrollBtn.classList.toggle("hidden", window.scrollY < 300);
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+        const html = document.documentElement;
+      const toggleBtn = document.getElementById("toggleDark");
+      const moonIcon = document.getElementById("moonIcon");
+      const sunIcon = document.getElementById("sunIcon");
+
+      // Set mode on load
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+        sunIcon.classList.remove("hidden");
+        moonIcon.classList.add("hidden");
+      } else {
+        html.classList.remove("dark");
+        sunIcon.classList.add("hidden");
+        moonIcon.classList.remove("hidden");
+      }
+
+      // Toggle mode
+      toggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        const isDark = html.classList.contains("dark");
+        if (isDark) {
+          sunIcon.classList.remove("hidden");
+          moonIcon.classList.add("hidden");
+          localStorage.setItem("theme", "dark");
+        } else {
+          sunIcon.classList.add("hidden");
+          moonIcon.classList.remove("hidden");
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      const form = document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = form.getAttribute("action");
+
+    fetch(action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    }).then(response => {
+      if (response.ok) {
+        alert("Pesan kamu berhasil dikirim! ✅");
+        form.reset();
+      } else {
+        alert("Gagal mengirim pesan. ❌");
+      }
+    });
+  });
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -488,11 +983,9 @@
         duration: 100,
         once: true,
       });
-    </script> 
+    </script>
 
   </body>
 </html>
-
-
 
 
